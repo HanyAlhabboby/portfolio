@@ -50,55 +50,114 @@ const ShowcaseSection = () => {
       <div className="w-full">
         <div className="showcaselayout">
           <div className="first-project-wrapper" ref={project1Ref}>
-            <div className="iamge-wrapper">
+            <div className="image-wrapper">
               <a href="https://github.com/HanyAlhabboby/BestStore">
-                <img src="/images/best-shop.png" alt="bestshop" />
+                <img
+                  src="/images/best-store-new.png"
+                  alt="bestshop"
+                  className=" w-full h-full scale-100 transition-transform duration-300 hover:scale-105 object-contain"
+                />
               </a>
             </div>
-            <div className="text-content">
-              <h2>
-                BestStore is a modern, ASP.NET Core MVC e-commerce web
-                application built with user authentication, role-based access,
-                and integrated email support using Brevo.
-              </h2>
-              <p className="text-white-50 md:text-xl">
-                The application utilizes Entity Framework with SQL Server for
-                data management and employs Razor Views combined with Bootstrap
-                5 for a responsive user interface.
-              </p>
+            <div className="text-content text-center">
+              <h3>BestStore is a modern ASP.NET Core MVC e-commerce web</h3>
+            </div>
+
+            <div className="project">
+              <div className="flex gap-6 justify-center">
+                <a
+                  href="https://github.com/HanyAlhabboby/Wallet-mobil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[200px] h-[400px] overflow-hidden rounded-2xl shadow-lg bg-black transition-transform duration-300 hover:scale-105"
+                >
+                  <img
+                    src="/images/wallet1.png"
+                    alt="wallet screen 1"
+                    className="w-full h-full object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://github.com/HanyAlhabboby/Wallet-mobil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[200px] h-[400px] overflow-hidden rounded-2xl shadow-lg bg-black transition-transform duration-300 hover:scale-105"
+                >
+                  <img
+                    src="/images/wallet2.png"
+                    alt="wallet screen 2"
+                    className="w-full h-full object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://github.com/HanyAlhabboby/Wallet-mobil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[200px] h-[400px] overflow-hidden rounded-2xl shadow-lg bg-black transition-transform duration-300 hover:scale-105"
+                >
+                  <img
+                    src="/images/wallet3.png"
+                    alt="wallet screen 3"
+                    className="w-full h-full object-contain"
+                  />
+                </a>
+
+                <a
+                  href="https://github.com/HanyAlhabboby/Wallet-mobil"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[200px] h-[400px] overflow-hidden rounded-2xl shadow-lg bg-black transition-transform duration-300 hover:scale-105"
+                >
+                  <img
+                    src="/images/wallet4.png"
+                    alt="wallet screen 4"
+                    className="w-full h-full object-contain"
+                  />
+                </a>
+              </div>
+
+              <h3 className="text-center mt-4">
+                Wallet is a personal finance app to track income and expenses.
+                Built with Expo Router and React Native.
+              </h3>
             </div>
           </div>
 
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
-              <div className="image-wrapper w-full h-64 overflow-hidden flex items-center justify-center bg-[#ffefdb]">
+              <div className="image-wrapper w-full h-64 overflow-hidden flex items-center justify-center ">
                 <a href="https://hanyalhabboby.github.io/worldwise">
                   <img
                     src="/images/worldwise.png"
                     alt="bestshop"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover scale-120 transition-transform duration-300 hover:scale-125"
                   />
                 </a>
               </div>
-              <h2>
+              <h3 className="text-center">
                 WorldWise is a location-based travel memory app built with
                 React. It allows users to explore cities, view travel notes, and
                 manage visited places using an interactive map interface.
-              </h2>
+              </h3>
             </div>
 
             <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#ffe7eb]">
+              <div className="image-wrapper w-full h-64 overflow-hidden flex items-center justify-center ">
                 <a href="https://hanyalhabboby.github.io/usepopcorn/">
-                  <img src="/images/usepopcorn.png" alt="Usepopcorn" />
+                  <img
+                    src="/images/usepopcorn.png"
+                    alt="Usepopcorn"
+                    className="w-full h-full object-cover scale-120 transition-transform duration-300 hover:scale-125"
+                  />
                 </a>
               </div>
-              <h2>
-                The usePopcorn is a React-based web application that enables
-                users to search for movies via the OMDb API, view detailed
-                information, and manage a personal watchlist with custom
+              <h3 className="text-center">
+                UsePopcorn is a React-based web application that enables users
+                to search for movies and manage a personal watchlist with custom
                 ratings.
-              </h2>
+              </h3>
             </div>
           </div>
         </div>

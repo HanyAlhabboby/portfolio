@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { socialImgs } from "../constants";
 
 import { navLinks } from "../constants";
 
@@ -47,6 +48,19 @@ const NavBar = () => {
             <span>Contact me</span>
           </div>
         </a>
+      </div>
+
+      <div className="socials flex gap-4 ml-13">
+        {socialImgs.map((img) => (
+          <a
+            className="icon transition-transform duration-300 hover:scale-135"
+            target="_blank"
+            href={img.url}
+            key={img.url}
+          >
+            <img src={img.imgPath} className="w-8 h-8" />
+          </a>
+        ))}
       </div>
     </header>
   );

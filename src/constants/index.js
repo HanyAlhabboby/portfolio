@@ -313,7 +313,7 @@ const socialImgs = [
   }, */
   {
     name: "linkedin",
-    imgPath: "/images/linkedin.png",
+    imgPath: "/images/linkedin-new.png",
     url: "https://www.linkedin.com/in/hanyalh/",
   },
   {
